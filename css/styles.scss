@@ -1,0 +1,323 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$link-decoration: none;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$custom-colors: (
+	"frederikOrange": #B15A3F,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrapComponents";
+
+// 5. Du kan lave styling her...
+
+
+body {
+	background-image: url("../pics/fire.gif")
+}
+
+.navbar {
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mig-container {
+	display: flex;
+	justify-content: center;
+
+}
+
+.mig {
+	margin: auto;
+	width: 60%;
+}
+
+.mineprojekter {
+	padding-top: 20px;
+	text-align: center;
+	color: #B15A3F;
+	font-family: 'Nova Square', sans-serif;
+}
+
+.brødtekst {
+	font-family: 'Nova Square', sans-serif;
+	padding: 30px 30px 35px 30px;
+	text-align: left;
+}
+
+
+
+.gif-container {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+
+}
+.titel {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	color: #B15A3F;
+	font-family: 'Nova Square', sans-serif;
+
+
+}
+.forside{
+background-color:#FFFDD0;
+	width:85%;
+	margin:auto;
+	margin-top: 30px;
+	border-radius: 15px;
+	border: 4px solid #B15A3F;
+
+}
+
+
+#carouselExampleIndicators{
+	max-width: 1000px;
+	margin: auto;
+	border-radius:10px
+
+}
+
+.d-block {
+	border-radius: 20px;
+
+	/* chatgpt --*/
+}
+
+.text-container-an {
+	margin-left: 10%;
+	margin-top: 80px;
+	font-family: 'Nova Square', sans-serif;
+	padding: 5px 5px 30px 5px;
+	text-align: left;
+	color: #b15a3f;
+	width: 50%;
+	height: 400px;
+}
+
+.animatetekst {
+	padding-top: 15%;
+
+}
+
+.photoshopcontainer{
+display: flex;
+	height: 500px;
+	justify-content: space-between;
+}
+
+
+.photoshoptekst {
+	max-height: 400px;
+	padding-top: 7%;
+}
+
+.photosopicon {
+	margin-left: 5%;
+	width: 50%;
+	height: 35%;
+}
+.text-container-ph{
+	font-family: 'Nova Square', sans-serif;
+	padding: 5px 5px 30px 5px;
+	text-align: left;
+	color: #b15a3f;
+	width: 72%;
+	max-height: 400px;
+}
+
+
+.kritacontainer{
+	display: flex;
+	height: 700px;
+	justify-content: space-between;
+}
+
+
+.krita-tekst {
+	padding-top: 15%;
+}
+
+.kritaicon {
+	margin-left: 5%;
+	width: 30%;
+	height: 35%;
+}
+.text-container-kr{
+	font-family: 'Nova Square', sans-serif;
+	padding: 5px 5px 30px 50px;
+	text-align: left;
+	color: #b15a3f;
+	width: 72%;
+	height: 400px;
+}
+
+
+.footer-container {
+	color: #b15a3f;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+	background-color:#FFFDD0;
+	border: 4px solid #b15a3f;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	width:100%;
+	margin:auto;
+	font-family: 'Nova Square', sans-serif;
+}
+
+.footer-content {
+
+	padding: 10px 10px 10px 10px;
+
+}
+
+.social-icons{
+	text-align: left;
+	padding-left: 10px;
+	width: 541px;
+	height: 50px;
+
+}
+
+.book {
+	width: 30px;
+	height: 30px;
+
+}
+@media (min-width: 800px) {
+	.mig{ width: 400px
+	}
+}
+
+/* ____________ index html ____________*/
+
+/* ____________ gymshark, og de andre ____________*/
+
+.gymshark{
+	text-align: center;
+}
+
+.forside2{
+	background-color:#FFFDD0;
+	width:85%;
+	margin:auto;
+	margin-top: 30px;
+	border-radius: 15px;
+	border: 4px solid #B15A3F;
+
+}
+
+.mineprojekter2 {
+	padding-bottom: 20px;
+	text-align: center;
+	color: #B15A3F;
+	font-family: 'Nova Square', sans-serif;
+}
+
+.iframe {
+	width: 90%;
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boks {
+	width: 100%;
+height: 50px;
+}
+
+.gym-container{
+	padding-top: 20px;
+	height: 400px;
+	text-align: center;
+
+}
+
+.moodboardimg {
+	width: 90%;
+	height: 90%;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.animateimg {
+	width: 90%;
+	height: 90%;
+	max-width: 350px;
+	max-height: 450px;
+
+}
+
+.photoimg {
+	width: 90%;
+	height: 90%;
+	max-width: 550px;
+	max-height: 650px;
+}
+
+.kritaimg {
+	width: 90%;
+	height: 90%;
+	max-width: 300px;
+	max-height: 3000px;
+}
+
+.scenarioimg {
+	width: 90%;
+	height: 90%;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.minititel {
+	padding-top: 40px;
+	text-align: center;
+	color: #B15A3F;
+	font-family: 'Nova Square', sans-serif;
+
+}
+
+.text-container1{
+font-family: 'Nova Square', sans-serif;
+padding: 5px 5px 30px 5px;
+text-align: center;
+color: #b15a3f;
+width: 72%;
+max-height: 600px;
+}
+
+.tekst1 {
+	margin-left: 25%;
+	text-align: left;
+	width: 90%;
+
+}
+
+.gymsharkimg {
+	width: 90%;
+	height: 90%;
+	max-width: 400px;
+	max-height: 400px;
+
+}
+
+.FIXER{
+	width: 90%;
+	height: 90%;
+	max-width: 400px;
+	max-height: 400px;
+	text-align: center;
+}
+
